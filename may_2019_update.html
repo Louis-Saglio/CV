@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Louis Saglio - CV</title>
+        <style>
+            body {
+                margin: 0;
+                border-top: solid;
+                border-top-width: 10px;
+                border-top-color: rgb(0, 80, 170);
+                border-bottom: solid;
+                border-bottom-width: 10px;
+                border-bottom-color: rgb(0, 80, 170);
+            }
+            body * {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+            header {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            .profile-picture {
+                width: 19.8vw;
+                flex-direction: row;
+                justify-content: flex-end;
+                margin-right: 15px;
+            }
+            .profile-picture > img {
+                width: 150px;
+                border-radius: 50%;
+            }
+            .profile-picture > span {
+                width: 50%;
+                background-color: red;
+            }
+            .personal-info {
+                text-align: right;
+                margin-right: 10px;
+            }
+            .personal-info > p > * {
+                margin-top: 3px;
+                margin-bottom: 3px;
+            }
+            .identity {
+                flex-direction: row;
+                margin-top: 10px;
+            }
+            .name {
+                font-size: 1.5em;
+            }
+            body section {
+                flex-direction: row;
+            }
+            .content {
+                padding-top: 15px;
+                border-top: solid;
+                border-top-color: rgb(0, 80, 170);
+                margin: 15px 10px 30px 15px;
+                width: 80%;
+            }
+            body > section > h2 {
+                width: 20vw;
+                text-align: right;
+                margin-top: 5px;
+            }
+            h3 {
+                flex-direction: row;
+                column-gap: 6px;
+            }
+            .position {
+                margin-bottom: 5px;
+            }
+            ul.position-description > li {
+                flex-direction: row;
+                column-gap: 6px;
+            }
+            .list-bullet-point {
+                font-size: 20px;
+                margin-right: 6px;
+            }
+            section.skills > div {
+                flex-direction: row;
+                column-gap: 20px;
+            }
+            section.skills > div > ul > li {
+                flex-direction: row;
+            }
+            .experience > .content > li {
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <header>
+            <div class="identity">
+                <div  class="profile-picture">
+                    <img src="../../../../Images/profileimage.jpeg" alt="profile-picture">
+                </div>
+                <h1>
+                    <span class="name">Louis</span>
+                    <span class="name">Saglio</span>
+                    <span class="qualification">Software engineer</span>
+                </h1>
+            </div>
+            <section class="personal-info">
+                <p>
+                    <a href="https://github.com/Louis-Saglio">https://github.com/Louis-Saglio</a>
+                    <a href="https://www.linkedin.com/in/louis-saglio/">https://www.linkedin.com/in/louis-saglio/</a>
+                    <span>louis.saglio@ynov.com</span>
+                    <span>+33612823846</span>
+                    <span>Bordeaux</span>
+                </p>
+            </section>
+        </header>
+        <section class="profile">
+            <h2>Profile</h2>
+            <p class="content">
+                4 years of experience in ERP development using Django and Python, plus a wide range of various personal software engineering projects (100+ Github repositories).<br>
+                3 years of studying Machine Learning with a special interest for genetic algorithms and Neural Networks
+            </p>
+        </section>
+        <section class="experience">
+            <h2>Experience</h2>
+            <ul class="content">
+                <li>
+                    <h3><span class="company">Waycom</span><span class="date-range">(09/19 - present)</span></h3>
+                    <p class="position">Python Developer</p>
+                    <ul class="position-description" style="list-style: circle">
+                        <li>
+                            <span class="list-bullet-point">&#8226;</span>
+                            Maintenance and development of the company's custom management software (Django Rest)
+                        </li>
+                        <li>
+                            <span class="list-bullet-point">&#8226;</span>
+                            Optimisation of database usage (through advanced use of Django ORM)
+                        </li>
+                        <li>
+                            <span class="list-bullet-point">&#8226;</span>
+                            Complete overhaul of the error management system
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><span class="company">Jestocke.com</span><span class="date">(11/17 - 09/19)</span></h3>
+                    <p class="position">Python Developer</p>
+                    <ul class="position-description">
+                        <li>
+                            <span class="list-bullet-point">&#8226;</span>
+                            Development of management tools for customer service, in particular a tool for managing unpaid bills
+                        </li>
+                        <li>
+                            <span class="list-bullet-point">&#8226;</span>
+                            Total redesign and improvement of the email sending and tracking system
+                        </li>
+                        <li>
+                            <span class="list-bullet-point">&#8226;</span>
+                            Collaboration with the Laboratoire Bordelais de Recherche en Informatique (LaBRI) to develop a Machine Learning algorithm to improve price suggestions
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="content">
+                <ul>
+                    <li><span class="list-bullet-point">&#8226;</span>General software engineering and programming skills</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Python (excellent knowledge)</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Django</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Pytest / Unittest</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Common Python libraries</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Java / Kotlin</li>
+                    <li><span class="list-bullet-point">&#8226;</span>HTML / CSS / Javascript / Typescript</li>
+                    <li><span class="list-bullet-point">&#8226;</span>React (web only)</li>
+                </ul>
+                <ul>
+                    <li><span class="list-bullet-point">&#8226;</span>Deep learning (NLP / Computer Vision)</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Tensorflow / Keras</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Jupyter Notebook</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Docker</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Linux</li>
+                    <li><span class="list-bullet-point">&#8226;</span>JetBrains IDEs (IntelliJ)</li>
+                    <li><span class="list-bullet-point">&#8226;</span>Git / Github / Gitlab</li>
+                </ul>
+            </div>
+        </section>
+        <section class="education">
+            <h2>Formation</h2>
+            <div class="content">
+                <p class="school">Ynov Informatique (2016 -2021)</p>
+                <p class="title">Titre d'Expert en Informatique et Système d'Information</p>
+                <p class="speciality">Spécialité Expert en Intelligence Artificielle</p>
+            </div>
+        </section>
+    </body>
+    <script style="display: none">
+        for (const element of document.querySelectorAll('body *')) {
+            const getNewColor = function () {return Math.floor(Math.random() * 200) + 50}
+            // element.style.backgroundColor = `rgb(${getNewColor()}, ${getNewColor()}, ${getNewColor()}, 0.5)`;
+        }
+    </script>
+</html>
